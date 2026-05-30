@@ -138,7 +138,7 @@ input:checked + span {
   position: relative;}
   
   
-            /* add/delete the episode parts here (1/3) */
+            /* add/delete the episode parts here (1/2) */
 
 .partition:has(input[value='EP1']:checked) ~ .episode div:not([data-tags*='EP1']),
 .partition:has(input[value='EP2']:checked) ~ .episode div:not([data-tags*='EP2']),
@@ -183,7 +183,7 @@ input:checked + span {
 <div class="villabox">
 
 
-            <!-- add/delete the episode parts here (2/3) -->
+            <!-- add/delete the episode parts here (2/2) -->
             
 <div class="partition">
   <label><input type="radio" name="filter" value="EP1" checked /><span>01.</span>  </label>
@@ -200,11 +200,10 @@ input:checked + span {
 
 <div class="episode">
 
-<!-- 
-
-    add/delete the episode parts here (3/3) 
+<!--     
     
-    to avoid the browser from loading all gifs at once, add the "loading=lazy"         attribute to your gifs like this: <img loading="lazy" src="img.gif"> 
+    to avoid the browser from loading all gifs at once, add the "loading=lazy"
+    attribute to your gifs like this: <img loading="lazy" src="img.gif"> 
     you can simply use find & replace (ctrl + h) or paste your html here: 
     https://villanela.tumblr.com/lazy.
     
