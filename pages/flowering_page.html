@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    
+    
+    <!--
+
+          gif pack directory by villanela
+          
+    credits
+    ⭑ font awesome icons
+    ⭑ iconsax by vuesax (compiled by glenthemes)
+    ⭑ hover underline animation by 30secondsofcode
+    ⭑ css only filtering by seb dancer-michael (seb.cat)
+    ⭑ button by NorthFishHasNa
+    
+    feel free to edit it to your heart's content, but don't use it as a base code.
+    don't redistribute or remove the credit.
+    feel free to contact me if you encounter any problem or have any doubt <3
+    
+    -->
+   
+
+    <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://villanela.github.io/file-hosting/pages/flowering_page.css"/>
+
+    <style type="text/css">
+
+:root {
+    
+  /* change the theme colors here */ 
+  --bg: #332927;
+  --text: #b5bedd;
+  --accent: #feefb6;
+  
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Instrument Serif';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  font-size: 15px;}
+a, a:visited {
+   text-decoration: none; 
+   color: var(--text);}
+b, u, s {
+    color: var(--accent);}
+img {
+  margin: 3px;
+  border-radius: 4px; /* to remove the round corners of the gifs, change the value to 0px */}
+
+::-moz-selection {
+  background-color: var(--bg);
+  color: var(--accent);}
+::selection {
+  background-color: var(--bg);
+  color: var(--accent);}
+
+.villabox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 95vh;
+  box-sizing: border-box;  
+  text-align: center;}
+
+/* episode parts */
+.partition {
+  position: sticky;
+  top: 0;
+  height: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;}
+.episode {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 75vh;
+  overflow-y: auto;
+  align-content: flex-start;}
+label {
+  margin-left: 5px;}
+input[type="radio"] {
+  display: none;}
+input:checked + span {
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;}
+
+/* information box */
+.info {
+  position: sticky;
+  bottom: 0;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background: var(--bg);}
+.info a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent);
+  transition: all 0.5s ease-in-out;}
+.info a:visited {
+  color: var(--accent);
+  text-decoration: none;}
+.info a:hover {
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;}
+.border {
+  flex: auto;
+  height: 1px;
+  background: var(--text);
+  margin: auto 20px;}
+.info-title {
+  font-family: 'Clemora';
+  font-size: clamp(1rem, -0.875rem + 5vw, 3.5rem);  
+  font-weight: 700;
+  position: relative;
+  justify-content: flex-start;}
+.info-details {
+  text-align: right;
+  position: relative;}
+  
+  
+            /* add/delete the episode parts here (1/3) */
+
+.partition:has(input[value='EP1']:checked) ~ .episode div:not([data-tags*='EP1']),
+.partition:has(input[value='EP2']:checked) ~ .episode div:not([data-tags*='EP2']),
+.partition:has(input[value='EP3']:checked) ~ .episode div:not([data-tags*='EP3']),
+.partition:has(input[value='EP4']:checked) ~ .episode div:not([data-tags*='EP4']),
+.partition:has(input[value='EP5']:checked) ~ .episode div:not([data-tags*='EP5']),
+.partition:has(input[value='EP6']:checked) ~ .episode div:not([data-tags*='EP6']),
+.partition:has(input[value='EP7']:checked) ~ .episode div:not([data-tags*='EP7']),
+.partition:has(input[value='EP8']:checked) ~ .episode div:not([data-tags*='EP8']),
+.partition:has(input[value='EP9']:checked) ~ .episode div:not([data-tags*='EP9']),
+.partition:has(input[value='EP10']:checked) ~ .episode div:not([data-tags*='EP10'])
+{
+  display: none;
+}
+
+
+@media only screen and (min-width:  274px) { .villabox { width:  274px; } }
+@media only screen and (min-width:  548px) { .villabox { width:  548px; } }
+@media only screen and (min-width:  822px) { .villabox { width:  822px; } }
+@media only screen and (min-width: 1096px) { .villabox { width: 1096px; } }
+@media only screen and (min-width: 1370px) { .villabox { width: 1370px; } }
+@media only screen and (min-width: 1644px) { .villabox { width: 1644px; } }
+
+    /* change the widths value (min-width & width) if your gif width is something         other than 268px 
+       the values refers to the gif width + the space between them (3px being the default value) so 274px = 268px + 3px
+       let's say your gif width is 300px:
+       width:  303px; --> 303 * 1
+       width:  606px; --> 303 * 2
+       width:  909px; --> 303 * 3 and so on */
+    
+    </style>
+
+  </head>
+  <body>
+  
+
+            <!-- change the link for your blog here! -->
+<button>
+  <span><a href="https://villanela.tumblr.com/">back to blog</a></span>
+</button>
+
+<div class="villabox">
+
+<div class="episode">
+<img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150"><img loading="lazy" src="https://placehold.co/268x150">
+</div> 
+
+            <!-- change the information at the bottom here! -->
+            
+<div class="info">
+        <div class="info-title">FC NAME</div> 
+        <div class="border"></div>
+        <div class="info-details">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+        <br>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <b>bold.</b> <s>strikethrough.</s> <u>underline.</u> <a href="/">link.</a></div>
+</div>
+      
+</div> 
+    
+    
+                        <!-- do not touch --> 
+<div class="credit"><a href="http://villanela.tumblr.com" title="theme by villanela" class="iconsax" icon-name="code-circle"></a></i></div>
+
+  </body>
+</html>
